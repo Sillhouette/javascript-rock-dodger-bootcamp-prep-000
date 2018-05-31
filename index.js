@@ -72,7 +72,7 @@ function createRock(x) {
      if(top < GAME_HEIGHT) {
        window.requestAnimationFrame(moveRock)
      } else {
-       rock.remove()
+       GAME.removeChild(rock);
      }
   }
 
@@ -94,7 +94,8 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger);
   //ROCKS.forEach(function(rock) { rock.remove() })
   for(let i = 0; i < ROCKS.length; i++){
-    ROCKS[i].remove();
+    GAME.removeChild(rock)
+    //ROCKS[i].remove();
     //ROCKS.splice(i);
   }
   //for(let i = 0; i < ROCKS.length; i++){
