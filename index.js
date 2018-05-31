@@ -94,7 +94,7 @@ function endGame() {
   window.removeEventListener('keydown', moveDodger);
   //ROCKS.forEach(function(rock) { rock.remove() })
   for(let i = 0; i < ROCKS.length; i++){
-    GAME.removeChild(ROCKS[i])
+    //GAME.removeChild(ROCKS[i])
     ROCKS[i].remove();
     //ROCKS[i].remove();
     //ROCKS.splice(i);
